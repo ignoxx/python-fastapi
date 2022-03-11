@@ -4,7 +4,8 @@ Sample backend for velobox using python and fastapi
 # Setup
 1. `python3 -m venv venv`
 2. `source venv/bin/activate`
-3. `uvicorn app.main:app --reload`
+3. `pip install -r requirements.txt`
+4. `uvicorn app.main:app --reload`
 
 # Docs
 `http://localhost:8000/docs`
