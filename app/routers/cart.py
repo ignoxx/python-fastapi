@@ -1,6 +1,5 @@
 from lib2to3.pytree import Base
-from typing import Dict
-from fastapi import FastAPI, APIRouter, HTTPException, Response, status
+from fastapi import APIRouter, HTTPException, Response, status
 from app.database import db
 from typing import Optional
 from pydantic import BaseModel

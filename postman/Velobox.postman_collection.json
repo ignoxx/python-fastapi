@@ -126,6 +126,36 @@
 						"method": "GET",
 						"header": [],
 						"url": {
+							"raw": "http://localhost:8000/carts/00ad2e02-9516-4187-b25f-e74fc710b3f9/items",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"carts",
+								"00ad2e02-9516-4187-b25f-e74fc710b3f9",
+								"items"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add item to cart",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Gameboy\",\n    \"price\": 99.50\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
 							"raw": "http://localhost:8000/carts/00ad2e02-9516-4187-b25f-e74fc710b3f8/items",
 							"protocol": "http",
 							"host": [
@@ -142,12 +172,21 @@
 					"response": []
 				},
 				{
-					"name": "Add item to cart",
+					"name": "Update cart item",
 					"request": {
-						"method": "GET",
+						"method": "PATCH",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Gameboy Advanced SP\",\n    \"price\": 100.99\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
 						"url": {
-							"raw": "http://localhost:8000/carts/00ad2e02-9516-4187-b25f-e74fc710b3f8/items",
+							"raw": "http://localhost:8000/carts/00ad2e02-9516-4187-b25f-e74fc710b3f9/items/e409a00c-aecd-476d-b04d-4a8b5cff1c20",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -155,8 +194,31 @@
 							"port": "8000",
 							"path": [
 								"carts",
-								"00ad2e02-9516-4187-b25f-e74fc710b3f8",
-								"items"
+								"00ad2e02-9516-4187-b25f-e74fc710b3f9",
+								"items",
+								"e409a00c-aecd-476d-b04d-4a8b5cff1c20"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Cart item",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/carts/00ad2e02-9516-4187-b25f-e74fc710b3f9/items/e409a00c-aecd-476d-b04d-4a8b5cff1c20",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"carts",
+								"00ad2e02-9516-4187-b25f-e74fc710b3f9",
+								"items",
+								"e409a00c-aecd-476d-b04d-4a8b5cff1c20"
 							]
 						}
 					},
