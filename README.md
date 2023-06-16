@@ -1,5 +1,5 @@
 # Velobox API
-Sample backend for velobox using python and fastapi
+Sample backend for a wishlist using python and fastapi
 
 # Setup
 1. `python3 -m venv venv`
