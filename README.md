@@ -1,4 +1,4 @@
-# Velobox API
+# Wishlist API
 Sample backend for a wishlist using python and fastapi
 
 # Setup
